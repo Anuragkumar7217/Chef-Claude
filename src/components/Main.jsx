@@ -15,9 +15,11 @@ export default function Main() {
     }
 
     async function getRecipe() {
+        console.log("geting recipeeee");
         const recipe = await getRecipeFromGeminiAI(ingredients);
+        console.log(recipe);
+        console.log("recipe");
         setRecipe(recipe);
-        console.log("get recipeeee");
     }
 
     return (
