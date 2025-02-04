@@ -4,7 +4,7 @@ import IngredientsList from "./IngredientsList";
 import { getRecipeFromGeminiAI } from "../ai.js";
 
 export default function Main() {
-    const [ingredients, setIngredients] = useState(["tomato", "onion", "garlic", "beef"]);
+    const [ingredients, setIngredients] = useState([]);
     const [recipe, setRecipe] = useState("");
 
     function addIngredient(e) {
